@@ -1,0 +1,73 @@
+.navegadorPadre{
+    grid-area: header;
+    background-color: rgba(255, 166, 0, 0.726);
+    height: 300px;
+    .nav__title{
+        font-size: 150px;
+        font-weight: 50px;
+        text-align: center; 
+        padding: 20px;
+        margin-bottom: 10px;
+        color:rgb(9, 99, 9);
+        font-family: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
+        }
+    .labelMenuPadre, .inputMenuPadre{
+            display: none;
+            &:checked + .menuHijo{
+                max-height: 300px
+            }
+            @media screen and (max-width: 600px) {
+                    display: block;
+        }
+            @media screen and (min-width: 600px) {
+                display: none;
+                }
+                 
+        .fa-solid .fa-bars{
+            @media screen and (max-width: 600px) {
+                size: 80px;
+                color: green;
+                padding-left: 20px;
+            }
+                }
+    .menuHijo {
+            font-family: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif;
+            top: 40px;
+            display: flex;
+            justify-content: space-around;
+            @media screen and (max-width: 600px){
+                display: none;
+                flex-direction: column;   
+            } 
+        }
+        .tarjeta__menu{
+            color: rgb(9, 99, 9);
+            font-size: 25px;
+            transition: .2s;
+            &:hover{
+                transform: scale(0.5)
+            }
+
+    .navegador{
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            font-family: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif;
+            color: rgb(9, 99, 9);
+            font-size: 18px;
+            flex-flow: column wrap ;
+            display: flex;
+            padding: 4px;
+            @media screen and (max-width:600px) {
+                    position: absolute;
+                    top: 130px;
+                    right: -30px;
+                        }
+            }
+        }
+  
+
+            }
+
+}
+

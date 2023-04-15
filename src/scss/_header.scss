@@ -1,0 +1,38 @@
+.hero{
+    grid-area: hero;
+    height: 53vh;
+    background-image: url(../img/kuya.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    .hero__text {
+        font-size: 70px;
+        font-weight: 300px;
+        font-family: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
+        color: rgb(221, 150, 18);
+        background-color: rgba(9, 99, 9, 0.87);
+        padding: 3px;
+        border-radius: 20px;
+        text-align: center;
+    }
+}
+
+.headerGuarderia{
+
+    .hero__textGuarderia{
+        font-size: 70px;
+        font-weight: 300px;
+        font-family: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
+        color: rgb(221, 150, 18);
+        background-color: rgba(9, 99, 9, 0.582);
+        padding: 3px;
+        border-radius: 20px;
+        text-align: center;
+
+    }
+
+}
+
+
+

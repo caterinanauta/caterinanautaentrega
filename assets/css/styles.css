@@ -1,0 +1,750 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+
+/*body index*/
+.body{
+    position: relative;
+    padding-bottom: 30em;
+    min-height: 100vh;
+}
+
+/*body guarderia*/
+  
+
+/* header */
+.navegadorPadre{
+    grid-area: header;
+    background-color: rgba(255, 166, 0, 0.726);
+    height: 300px;
+}
+.nav__title{
+    font-size: 150px;
+    font-weight: 50px;
+    text-align: center; 
+    padding: 20px;
+    margin-bottom: 10px;
+    color:rgb(9, 99, 9);
+    font-family: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
+}
+.menuHijo {
+    font-family: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif;
+    top: 40px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.inputMenuPadre{
+    display: none;
+}
+
+.tarjeta__menu{
+    color: rgb(9, 99, 9);
+    font-size: 25px;
+    transition: .2s;
+}
+.tarjeta__menu:hover{
+    transform: scale(0.5);
+}
+
+#btn-menu{
+    display: none;   }
+
+.fa-bars{
+     display: none;   }    
+
+.navegador > ul {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-family: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif;
+    flex-flow: column wrap ;
+}
+.navegador > ul > li > a{
+    display: flex;
+    padding: 4px;
+    text-decoration: none;
+    color: rgb(9, 99, 9);
+    font-size:18px;
+}
+nav ul{
+    list-style-type: none;
+}
+.hero__text {
+    font-size: 70px;
+    font-weight: 300px;
+    color: rgb(221, 150, 18);
+    background-color: rgba(9, 99, 9, 0.87);
+    padding: 3px;
+    border-radius: 20px;
+    text-align: center;
+}
+.animate__backInLeft{
+    animation-duration: 1s;
+}
+
+.hero{
+    grid-area: hero;
+    height: 53vh;
+    font-family: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
+    background-image: url(../img/kuya.jpg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+/*index: main*/
+.main{
+    grid-area: main;
+}
+
+.tarjetaPadre{
+display: flex;
+flex-flow: row wrap;
+}
+.tarjetaPadreBis{
+display: flex;
+flex-flow: row wrap;
+}
+.tarjetaHijo{
+ width: 50%;
+ height: 260px;
+ display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.tarjetaHijoBis{
+width: 33.3%;
+height: 260px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.tarjetaPaisajismo{
+background-image: url(../img/PaisajismoUno.jpg);
+background-repeat: no-repeat;
+}
+.tarjetaShopUno{
+background-image: url(../img/shopUno.jpg);
+background-repeat: no-repeat;
+}
+.tarjetaGuarderiaUno{
+background-image: url(../img/guarderiaUno.jpg);
+background-repeat: no-repeat;
+}
+.tarjetaAsesoramiento{
+background-image: url(../img/asesoramientoUno.jpg);
+background-repeat: no-repeat;
+}
+.tarjetaPlaylist{
+background-image: url(../img/floraymusicaUno.jpg);
+background-repeat: no-repeat;
+}
+.seccionBoton{
+scale: 0.80s;
+}
+.seccionesBoton{
+color: rgb(221, 150, 18); 
+font-family: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif;
+font-size: 20px;
+font-weight: 60px;
+padding: 20px;
+border-radius: 10px;
+background-color: rgba(9, 99, 9, 0.87);
+}
+.seccionBoton:hover{
+transform: scale(0.85);
+}
+
+.tituloOfertas{
+    color: rgba(255, 166, 0, 0.726);;
+    font-family: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
+    display: flex;
+    margin-top: 30px;
+    font-size: 50px;
+    justify-content: space-evenly;
+}
+
+.animate__shakeY{
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.tarjetaPadreUno{
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+ .titulo__ofertas{
+    font-size: 30px;
+    font-weight: 10px;
+    color: rgb(221, 150, 18);
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.tarjetaUno__btn{
+    text-decoration: none;
+    outline: none;
+    color: orange;
+}
+
+.tarjetaHijo__Uno{
+    position: relative;
+    bottom: 150px;
+    width: 250px;
+    height: 400px;
+ }
+
+.divOfertas{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
+    color: rgba(9, 99, 9, 0.87);
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .navegadorPadre{
+        width: 100vw;
+        height: 100px;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+    .nav__title{
+        font-size: 50px;
+        font-weight: 50px;
+        text-align: right; 
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    .navegador ul{
+        display:flex;
+        flex-flow: row;
+        position:absolute;
+        top: 70px;
+        right: 10px;
+    }
+    .fa-bars {
+        display:flex;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        font-size: 30px;
+        font-weight: 30px;
+        text-align: right; 
+        color: rgba(9, 99, 9, 0.87) ;
+    }
+    #btn-menu{
+        display: none;   }
+    .menuPadre {
+        display: absolute;
+        width: 50%;
+        height: 100vh;
+        background: rgba(9, 99, 9, 0.87);
+        transform: translateX(-100%);
+        transition: 0.5s;
+    }
+    .menuHijo {
+        flex-direction: column;
+        top: 40;
+    }
+    .tarjeta__menu{
+        padding: 15px;
+        box-sizing: border-box;
+        color: rgba(255, 166, 0, 0.726);
+        border-bottom: solid 1px rgba(255, 166, 0, 0.726);
+    }
+    #btn-menu:checked ~ .menuPadre {
+        transform: translateX(0%);
+    }
+}
+    @media screen and (max-width: 660px) {
+        .secciones{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .tarjetaPadre{
+            display: flex;
+            flex-flow: column;
+            }
+        .tarjetaPadreBis{
+            display: flex;
+            flex-flow: column;
+            }
+
+            .tarjetaHijo{
+                width: 100vw;
+                height: 150px;
+                display: flex;
+               justify-content: center;
+               align-items: center;
+               
+               }
+               .tarjetaHijoBis{
+               width: 100vw;
+               height: 150px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               }
+            }
+
+@media screen and (max-width: 1000px) {
+    .tarjetaPadreUno{
+        display: flex;
+        flex-wrap: wrap;
+     }
+        
+    .tarjetaHijo__Uno{
+        display: flex;
+        flex-flow:column;
+        width: 250px;
+        height: 400px;
+     }
+
+}
+
+@media screen and (max-width: 410px) {
+    .fa-bars {
+        display:flex;
+        position: absolute;
+        left: 2px;}
+
+    .navegadorPadre{
+         width: 180px;}
+
+    .menuPadre {
+        display: absolute;
+        width: 100%;  }   
+
+
+    .hero__text{
+    font-size: 40px;
+    font-weight: 40px;
+    margin-left: 8px;
+    margin-right: 8px;
+    }
+
+    .hero{
+        height: 45vh;
+    }
+
+    .footerUno{
+        font-size: 14px;
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        position: absolute;
+        top: 7px;
+    }
+
+    .footerDos{
+        font-size: 12px;
+    }
+
+
+    .navegador ul{
+        position: absolute;
+        top: 15px;
+        right: -95px;
+        flex-flow: column wrap;
+    }
+
+    .navegador > ul > li > a{
+        font-size:16px;
+        padding: 2px;
+    }
+
+@media screen and (max-width: 1058px) {
+    
+    .tarjetaPadreUno{
+        display: flex;
+        flex-flow: column;
+     }
+    
+     .titulo__ofertas{
+        font-size: 20px;
+        font-weight: 15px;
+    }      
+}
+}
+
+
+
+/*footer*/
+.colorInvierno{
+    grid-area: footer;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background-color: rgb(221, 150, 18);
+} 
+.footerUno__titulo{
+    color: #6C4804;
+    font-family: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif;
+    font-size: 22px;
+}
+.footerUno{
+    display: flex;
+    top: 5px;
+    flex-flow: column wrap ;
+    align-content: flex-end;
+}
+.footer__uno{
+ display: flex;
+ justify-content: space-around;
+ color: #6C4804;
+}
+.footerDos{
+    color: #6C4804;
+    font-family: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif;
+    font-size: 22px;
+    display: flex;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+/*header: guarderia*/
+.headerGuarderia{
+    background-image: url(../img/AdobeStock_408481914_Preview.jpg);
+    background-repeat: none;
+    padding-bottom: 50px;
+
+}
+.tituloGuarderiaUno{
+    width: 1000px;
+    padding-top: 50px;
+    font-size: 70px;
+    font-weight: 300px;
+    font-family: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
+    color: rgb(221, 150, 18);
+    border-radius: 10px;
+    text-align:center;
+    position: relative;
+    right: 100px;
+}
+.tituloGuarderiaUnoBis{
+    background-color: rgba(9, 99, 9, 0.87);
+    border-radius: 10px;
+}
+.tituloGuarderiaDos{
+    font-size: 50px;
+    font-weight: 300px;
+    font-family: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
+    color: rgb(221, 150, 18);
+    padding-bottom: 100px;
+    text-align:center;
+    position: relative;
+    left: 20px;
+}
+.tituloGuarderiaDosBis{
+    background-color: rgba(9, 99, 9, 0.87);
+    border-radius: 10px;
+}
+.animate__rubberBand{
+    animation-duration: 1s;
+}
+.animate__backInRight{
+    animation-duration: 1.5s;
+}
+.parrafoGuarderia{
+    font-size: 40px;
+    font-weight: 30px;
+    font-family: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
+    color: rgba(9, 99, 9, 0.87);
+    text-align:center;
+    background-color: rgb(221, 150, 18);
+}
+
+ /*main: guarderia*/
+ .formularioMain{
+    background-size: 100vw 100vh;
+    color: rgb(214, 141, 4);
+    margin-top: 100px;
+ }
+.formulario{
+    width: 600px;
+    margin: auto;
+    margin-bottom: 0;
+    border: 2px solid rgb(214, 141, 4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+.tituloFormularioGuarderia{
+    text-align: center;
+    font-size: 30px;
+    font-family: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
+    margin-bottom: 20px;
+}
+.formulario label{
+    display: flex;
+    flex-direction: column;
+}
+.formulario label input , .formulario label textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid green;
+    margin-top: 10px;
+    outline: none;
+    color: green;
+}
+.textarea{
+min-height: 100px;
+max-width: 200px;
+max-width: 100%;
+}
+#boton{
+    color: orange;
+    padding: 20px;
+    width: 100%;
+    background-color: whitesmoke
+}
+#boton:hover{
+    cursor:pointer;
+}
+
+.colorInviernoGuarderia{
+    grid-area: footer;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background-color: rgb(221, 150, 18);
+
+}
+
+@media (max-width: 1024px) {
+    .hero__textGuarderia{
+        margin-top: 100px;
+    }
+
+}
+
+@media (max-width: 640px) {    
+
+    .tituloGuarderiaUno{
+        padding-top: 50px;
+        font-size: 40px;
+        text-align:center;
+        position: relative;
+        right: 350px;
+    }
+    .tituloGuarderiaDos{
+        font-size: 30px;
+        font-weight: 20px;
+        padding-top: 0;
+    }
+
+    .parrafoGuarderia{
+        font-size: 25px;
+}
+
+.formularioMain{
+    margin-top: 50px;
+ }
+
+ .formulario{
+    width: 280px;
+}
+
+}
+
+
+
+
+
+
+
+
+ .tarjetaPadreUno{
+    grid-area: aside;
+    margin-top: 200px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    height: 20px;
+ }
+
+ .tarjetaHijoUno{
+    padding: 0px;
+    width: 100px;
+    height: 100px;
+    border: 2px green solid;
+ }
+/*shop*/
+ .mainShop{
+    margin-top: 150px;
+ }
+.tituloShop{
+    color: rgba(255, 166, 0, 0.726);;
+    font-family: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
+    display: flex;
+    margin-top: 30px;
+    font-size: 50px;
+    justify-content: center;
+}
+.tarjetaShop{
+    display: flex;
+    flex-flow: row wrap;
+    height: 500px;
+    }
+
+    .tarjetaShopBis{
+    display: flex;
+    width: 33.3%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: space-around;
+    }
+    
+
+
+
+
+/*paisajismo*/
+.active{
+    padding: 3px;
+    text-align: center;
+    font-family: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
+    display: flex;
+    align-self: center;
+}
+.tituloPaisajismo{
+    font-size: 70px;
+    font-weight: 300px;
+    color: rgb(221, 150, 18);
+    text-align: center;
+    position: absolute;
+}
+
+
+
+.parrafoPaisajismo{
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 30px;
+    font-family: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
+    color: rgba(9, 99, 9, 0.87);
+    text-align:center;
+    border: 2px solid rgb(221, 150, 18);
+}
+
+.formularioDiv{
+    background-size: 100vw 100vh;
+    color: rgb(214, 141, 4);
+    margin-top: 20px;
+ }
+.formularioPaisajismo{
+    width: 600px;
+    margin: auto;
+    margin-bottom: 0;
+    border: 2px solid rgb(214, 141, 4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    
+}
+.tituloFormularioPaisajismo{
+    text-align: center;
+    font-size: 30px;
+    font-family: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
+    margin-bottom: 20px;
+}
+.formulario label{
+    display: flex;
+    flex-direction: column;
+}
+.formulario label input , .formulario label textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid green;
+    margin-top: 10px;
+    outline: none;
+    color: green;
+}
+.textarea{
+min-height: 100px;
+max-width: 200px;
+max-width: 100%;
+}
+#boton{
+    color: orange;
+    padding: 20px;
+    width: 50%;
+    background-color: whitesmoke
+}
+#boton:hover{
+    cursor:pointer;
+}
+
+.bodyPaisajismo{
+    position: relative;
+    padding-bottom: 50em;
+    min-height: 100vh;
+}
+
+
+@media (max-width: 1024px) {
+
+    .carousel{
+        margin-top: 100px;
+}
+}
+
+@media (max-width: 750px) {
+.tituloPaisajismo{
+    font-size: 40px;
+}
+}
+
+@media (max-width: 380px) {
+    .tituloPaisajismo{
+        font-size: 20px;
+    }  
+}
+
+
+
+
+
+
+
+
+
+
+.cajaShop{
+    width: 600px;
+    height: 500;
+    border: orange solid 1px;
+}
+
+
+
+
+
+
+
+

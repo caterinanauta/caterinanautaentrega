@@ -1,0 +1,95 @@
+.secciones{
+min-width: 5px;
+height: 80%;
+
+    .tarjetaPadre{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    height: 50%;
+    }
+        .tarjetaHijo{
+        width: 50%;
+        height: 100%;
+       }
+         .tarjetaShopUno{
+            background-image: url(../assets/img/shop.jpeg);
+             }
+
+        .tarjetaGuarderiaUno{
+        background-image: url(../assets/img/guarderia.jpeg);
+        }
+    .tarjetaPadreBis{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly; 
+        gap: 0px;
+        height: 50%;
+        }
+        .tarjetaHijoBis{
+            width: 33.3%;
+            height: 100%;
+            }
+            .tarjetaPaisajismo{
+                background-image: url(../assets/img/paisajismo.jpeg);
+                }
+                .tarjetaAsesoramiento{
+                background-image: url(../assets/img/asesoramiento.jpeg);
+                }
+                .tarjetaPlaylist{
+                background-image: url(../assets/img/floraymusica.jpeg);
+                }
+
+.secciones__titulo{
+display: flex;
+justify-content: center;
+margin-top: 70px;
+font-family: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif;
+font-size: 20px;
+color:$colorprincipal;                    
+}
+                    
+.tarjeta__btn{
+display: block;
+width: 10px;
+padding: 10px;
+border-radius: 8px;
+border: none;
+background-color: $colorprincipal;
+color: white;
+text-decoration: none;
+text-align: end;
+}
+}
+
+
+.tarjetaPadreUno{
+grid-area: aside;
+display: flex;
+flex-flow: row;
+justify-content: space-evenly;
+width: $ancho/4;
+    .tarjetaHijoUno{
+    padding: 0px;
+    width: 100px;
+    height: 100px;
+    border: 2px $colorsecundario;
+    }
+
+    .tarjetaUno__btn{
+        display: block;
+        width: 3px;
+        padding: 5px;
+        border-radius: 2px;
+        border: none;
+        background-color: $colorprincipal;
+        color: white;
+        text-decoration: none;
+        text-align: end;
+        &:hover{
+            background-color: $colorsecundario;
+        }
+        }
+
+
+}
